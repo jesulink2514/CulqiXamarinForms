@@ -67,7 +67,7 @@ namespace CardDemoXamarin
             await App.Current.MainPage.DisplayAlert(resp.IsSuccessStatusCode?"Response": "Error", await resp.Content.ReadAsStringAsync(), "Ok");
         }
 
-        public static string GetYear(this string expiration)
+        public static string GetYear(string expiration)
         {
             var twoParts = expiration.Split('/');
             var years = int.Parse(twoParts[1]);
