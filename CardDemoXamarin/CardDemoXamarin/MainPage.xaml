@@ -63,7 +63,7 @@
         </Entry>
 
         <Button Text="Pay with this Card" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="25" 
-                TextColor="White" BackgroundColor="#00AE0C"/>
+                TextColor="White" BackgroundColor="#00AE0C" Command="{Binding PayCommand}"/>
 
     </Grid>
 </ContentPage>
